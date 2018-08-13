@@ -39,10 +39,10 @@ public class TypingTutor implements KeyListener {
 		
 		if (e.getKeyChar() == currentLetter) {
 			System.out.println("Correct");
-			frame.getContentPane().setBackground(new Color(0,255,0));
+			frame.getContentPane().setBackground(Color.cyan);
 		} else  {
 			System.out.println("Incorrect");
-			frame.getContentPane().setBackground(Color.red);
+			frame.getContentPane().setBackground(Color.pink);
 	}}
 
 	@Override
