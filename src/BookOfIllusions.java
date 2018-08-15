@@ -36,6 +36,7 @@ JFrame frame = new JFrame();
 		frame.setSize(1000, 1000);
 		// 4. find 2 images and save them to your project’s default package
 		// 5. make a variable to hold the location of your image. e.g. "illusion.jpg"
+		
 		// 6. create a variable of type "JLabel" but don’t initialize it yet
 		// 7. use the "loadImage..." methods below to initialize your JLabel
 		// 8. add your JLabel to the frame
