@@ -10,11 +10,11 @@ public class TypingTutor implements KeyListener {
 
 	public static void main(String[] args) {
 		new TypingTutor().createUI();
-		
+
 	}
 
 	JFrame frame = new JFrame();
-	JLabel label = new JLabel(); 
+	JLabel label = new JLabel();
 	char currentLetter;
 
 	private void createUI() {
@@ -36,14 +36,15 @@ public class TypingTutor implements KeyListener {
 	@Override
 	public void keyTyped(KeyEvent e) {
 		// TODO Auto-generated method stub
-		
+
 		if (e.getKeyChar() == currentLetter) {
 			System.out.println("Correct");
-			frame.getContentPane().setBackground(Color.green);
-		} else  {
+			frame.getContentPane().setBackground(Color.cyan);
+		} else {
 			System.out.println("Incorrect");
-			frame.getContentPane().setBackground(Color.red);
-	}}
+			frame.getContentPane().setBackground(Color.pink);
+		}
+	}
 
 	@Override
 	public void keyPressed(KeyEvent e) {
@@ -54,8 +55,8 @@ public class TypingTutor implements KeyListener {
 	@Override
 	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
-currentLetter = generateRandomLetter();
-label.setText(""+ currentLetter);
-	
+		currentLetter = generateRandomLetter();
+		label.setText("" + currentLetter);
+
 	}
 }

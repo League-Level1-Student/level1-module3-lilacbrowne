@@ -8,9 +8,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.net.URL;
 
-import javax.sound.sampled.AudioInputStream;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
 import javax.swing.BoxLayout;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -20,8 +17,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-
-import java.io.File;
 
 /* This recipe is to be used with the Jeopardy Handout: http://bit.ly/1bvnvd4 */
 
@@ -47,7 +42,7 @@ public class Jeopardy implements ActionListener {
 		// 1. Make the frame show up
 		frame.setVisible(true);
 		// 2. Give your frame a title
-		frame.setTitle("Welcome to Jeoprady!");
+		frame.setTitle("Welcome to Jeopardy!");
 		// 3. Create a JPanel variable to hold the header using the createHeader method
 		JPanel panel = createHeader("Random Cat Trivia");
 		// 4. Add the header component to the quizPanel
