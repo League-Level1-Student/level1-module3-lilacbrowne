@@ -7,6 +7,8 @@
 
 public class Movie implements Comparable<Movie> {
 
+
+
 	private String title;
 	private int stars;
 

@@ -18,6 +18,9 @@ public class Calculator implements KeyListener, ActionListener {
 				"Enter a number in each box, then click the button for which operation you want to do!");
 	}
 
+	int num1;
+	int num2;
+	int newnumber;
 	JFrame frame = new JFrame();
 	JLabel label = new JLabel();
 	JPanel panel = new JPanel();
@@ -71,12 +74,43 @@ public class Calculator implements KeyListener, ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
+		JButton buttonpressed = (JButton) e.getSource();
 		text1.getText();
 		text2.getText();
 		String a = text1.getText();
-		int num1 = Integer.parseInt(a);
+		 num1 = Integer.parseInt(a);
 		String b = text2.getText();
-		int num2 = Integer.parseInt(b);
+		 num2 = Integer.parseInt(b);
+		if (buttonpressed.equals(add)) {
+			Addition();
+		} else if (buttonpressed.equals(sub)) {
+			Subtraction();
+		} else if (buttonpressed.equals(mul)) {
+			Multiplication();
+		} else if (buttonpressed.equals(div)) {
+			Division();
+		}
+
 	}
 
+	public void Addition() {
+		newnumber = num1 + num2;
+		System.out.println(newnumber);
+	}
+
+	public void Subtraction() {
+		newnumber = num1 - num2;
+		System.out.println(newnumber);
+	}
+
+	public void Multiplication() {
+		newnumber = num1 * num2;
+		System.out.println(newnumber);
+	}
+
+	public void Division() {
+		double newnumber2; 
+		newnumber2 = (double)(num1) / ( double)num2 ;
+		System.out.println(newnumber2);
+	}
 }

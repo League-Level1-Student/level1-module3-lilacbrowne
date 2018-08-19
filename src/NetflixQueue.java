@@ -9,6 +9,11 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class NetflixQueue {
+	private String TheIncredibles;
+	private String FindingNemo;
+	private String ToyStory; 
+	private String Cars;
+	private String InsideOut; 
 	
 	ArrayList<Movie> movies = new ArrayList<Movie>();
 	
