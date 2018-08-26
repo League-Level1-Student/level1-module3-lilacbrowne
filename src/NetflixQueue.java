@@ -9,11 +9,24 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class NetflixQueue {
-	private String TheIncredibles;
-	private String FindingNemo;
-	private String ToyStory; 
-	private String Cars;
-	private String InsideOut; 
+	public static void main(String[] args) {
+		NetflixQueue Netflix = new NetflixQueue(); 
+		Movie Incredibles = new Movie("The Incredibles", 7); 
+		Movie ToyStory = new Movie ("Toy Story", 7);
+		Movie FindingNemo = new Movie ("Finding Nemo", 10);
+		Movie Cars = new Movie ("Cars", 9);
+		Movie WreckItRalph = new Movie ("Wreck-It-Ralph", 8); 
+		System.out.println(WreckItRalph.getTicketPrice());
+		Netflix.addMovie(WreckItRalph);
+		Netflix.addMovie(Cars);
+		Netflix.addMovie(ToyStory);
+		Netflix.addMovie(FindingNemo);
+		Netflix.addMovie(Incredibles);
+		Netflix.printMovies();
+		System.out.println("The best movie is " + Netflix.getBestMovie());
+		
+	}
+	
 	
 	ArrayList<Movie> movies = new ArrayList<Movie>();
 	
